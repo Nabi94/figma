@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    background-color: red;
+
+}
+.container{
+    width: 100%;
+    display: flex;
+    padding: 30px 30px;
+    background-color:#FFF5EC ;
+
+}
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 30px;
+    &__card{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 30%;
+        background-color: #ffffff;
+        border-radius:25px ;
+    }
+    &__img{
+        max-width:100% ;
+        height: auto;
+
+    }
+    &__inner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+
+    }
+    &__title{
+        color: #2E266F;
+        font-size: 1.5rem;
+        font-weight: 500;
+
+    }
+    &__price{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #35CD8C;
+
+    }
+    &__subtitle{
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: #707070;
+        padding: 20px 30px 30px 30px;
+
+    }
+}
+/* For Tablet */
+@media only screen and (max-width:768px) {
+    .container{
+        height: auto
+    }
+    .cards__title{
+        font-size: 0.8rem;
+    }
+    .cards__price{
+        font-size: 0.5rem;
+    }
+    .cards__subtitle{
+        font-size: 0.5rem;
+    }
+}
+/* For Mobile */
+
+@media only screen and (max-width:320px){
+    .container{
+        height: auto;
+
+    }
+    .cards__card{
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        gap: 0 30px;
+    }
+    .cards__title{
+        font-size:0.95rem;
+
+    }
+    .cards__price{
+        font-size: 1rem;
+    }
+    .cards__subtitle{
+        font-size: 0.5rem;
+    }
+
+}
+@media only screen and (max-width:375px){
+    .cards__card{
+        width: 100%;
+        display:flex;
+        flex-flow:column wrap;
+
+    }
+}
+@media only screen and (max-width:425px){
+    .cards__card{
+        width: 100%;
+        display:flex;
+        flex-flow:column wrap;
+
+    }
+
+}
